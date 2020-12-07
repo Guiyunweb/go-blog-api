@@ -1,23 +1,12 @@
-######################################################################
-# Build Tools
+# ---> Go
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
 
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-target/
-!.mvn/wrapper/maven-wrapper.jar
-
-######################################################################
-# IDE
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
+# Folders
+_obj
+_test
 
 ### IntelliJ IDEA ###
 .idea
@@ -25,41 +14,19 @@ target/
 *.iml
 *.ipr
 
-### NetBeans ###
-nbproject/private/
-build/*
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
 
-######################################################################
-# Others
-*.log
-*.xml.versionsBackup
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
 
-!*/build/*.java
-!*/build/*.html
-!*/build/*.xml
+_testmain.go
 
+*.exe
+*.test
+*.prof
 
-.DS_Store
-.idea/*
-.idea
-out
-*/target
-*/target/
-*/out/
-out
-*/logs/
-*/.settings/
-*/.classpath
-*/.project
-.settings/
-.project
-*.iml
-*/*.iml
-*/bin
-logs
-*.iml
-*.yml

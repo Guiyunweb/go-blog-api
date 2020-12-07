@@ -1,0 +1,20 @@
+### Server配置
+HTTP_PORT = 8687 # 端口号设置
+
+### 日志配置
+LOG_LEVEL = "debug" # 全局日志级别
+LOG_PATH = "./shike.log" # 全局日志级别
+
+### 数据库配置
+DB_TYPE = "mysql"
+DB_DEFAULT_DSN = "root:@tcp(127.0.0.1:3306)/db_report?parseTime=true&loc=Local"
+
+# Redis 配置
+REDIS_DEFAULT_HOST = "127.0.0.1:6379" #Redis地址
+REDIS_DEFAULT_INIT_CONNS = 1 # 初始连接数
+REDIS_DEFAULT_MAX_CONNS = 2 # 最大连接数
+
+# token配置
+TOKEN_HEADER = "Authorization" #令牌自定义标识
+TOKEN_SECRET = "abcdefghijklmnopqrstuvwxyz" # 令牌密钥
+TOKEN_EXPIRE_TIME = 30 #令牌有效期单位分钟

@@ -1,15 +1,15 @@
 package main
 
 import (
-	"blog-api/conf"
-	"blog-api/server"
+	"blog-api/cmd"
+	"github.com/Guiyunweb/shiki/conf"
 )
 
 func main() {
-	// 从配置文件读取配置
-	conf.Info()
-
-	// 装载路由
-	r := server.NewRouter()
-	r.Run(":8866")
+	// 读取配置
+	if err := conf.Init(); err != nil {
+		panic(err)
+	}
+	// 启动服务
+	cmd.Run()
 }
